@@ -1,12 +1,20 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+
 const About = () => {
-  const highlights = ["4.0 GPA Student", "Multiple Internships", "Research Experience", "Leadership Roles"];
-  return <section id="about" className="py-20 px-4 sm:px-6 lg:px-8">
+  const highlights = [
+    "4.0 GPA Student",
+    "Multiple Internships", 
+    "Research Experience",
+    "Leadership Roles"
+  ];
+
+  return (
+    <section id="about" className="py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            About <span className="gradient-primary bg-clip-text text-transparent"></span>
+            About <span className="gradient-primary bg-clip-text text-transparent">Me</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Passionate about creating digital solutions that make a difference
@@ -28,16 +36,26 @@ const About = () => {
             </Card>
 
             <div className="grid grid-cols-2 gap-4">
-              {highlights.map((highlight, index) => <Badge key={index} variant="secondary" className="p-3 text-center justify-center hover-glow transition-smooth">
+              {highlights.map((highlight, index) => (
+                <Badge 
+                  key={index}
+                  variant="secondary" 
+                  className="p-3 text-center justify-center hover-glow transition-smooth"
+                >
                   {highlight}
-                </Badge>)}
+                </Badge>
+              ))}
             </div>
           </div>
 
           <div className="space-y-6">
             <div className="flex items-center justify-center mb-6">
               <div className="relative w-48 h-48 rounded-full overflow-hidden border-4 border-primary/20">
-                <img src="/lovable-uploads/043c0fd9-2f34-4af9-82d1-18ee71c0bcee.png" alt="Rohan Sashank Babbellapati" className="w-full h-full object-cover" />
+                <img 
+                  src="/lovable-uploads/043c0fd9-2f34-4af9-82d1-18ee71c0bcee.png" 
+                  alt="Rohan Sashank Babbellapati"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
             
@@ -75,6 +93,8 @@ const About = () => {
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default About;
