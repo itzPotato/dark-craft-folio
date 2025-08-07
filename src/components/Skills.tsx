@@ -15,56 +15,56 @@ import {
 const Skills = () => {
   const skillCategories = [
     {
-      title: "Frontend Development",
+      title: "Programming Languages",
       icon: <Code className="h-6 w-6" />,
       skills: [
-        { name: "React/Next.js", level: 95 },
-        { name: "TypeScript", level: 90 },
-        { name: "Tailwind CSS", level: 95 },
-        { name: "Vue.js", level: 80 },
+        { name: "Python", level: 95 },
+        { name: "Java", level: 90 },
+        { name: "JavaScript", level: 85 },
+        { name: "SQL", level: 90 },
       ],
-      technologies: ["React", "Next.js", "TypeScript", "JavaScript", "HTML5", "CSS3", "Tailwind", "SCSS", "Vue.js", "Nuxt.js"]
+      technologies: ["Python", "Java", "JavaScript", "HTML/CSS", "SQL", "C"]
     },
     {
-      title: "Backend Development", 
+      title: "Frameworks & Libraries", 
       icon: <Database className="h-6 w-6" />,
       skills: [
-        { name: "Node.js", level: 90 },
-        { name: "Python", level: 85 },
-        { name: "PostgreSQL", level: 85 },
-        { name: "REST/GraphQL APIs", level: 90 },
+        { name: "React.js", level: 85 },
+        { name: "Pygame", level: 80 },
+        { name: "Flask", level: 75 },
+        { name: "Pandas", level: 90 },
       ],
-      technologies: ["Node.js", "Express", "Python", "Django", "PostgreSQL", "MongoDB", "Redis", "GraphQL", "REST APIs"]
+      technologies: ["React.js", "Pygame", "Flask", "Pandas", "NumPy", "Matplotlib", "Seaborn", "scikit-learn"]
     },
     {
-      title: "UI/UX Design",
-      icon: <Palette className="h-6 w-6" />,
+      title: "Data Science & AI",
+      icon: <Zap className="h-6 w-6" />,
       skills: [
-        { name: "Figma", level: 90 },
-        { name: "Design Systems", level: 95 },
-        { name: "User Research", level: 80 },
-        { name: "Prototyping", level: 85 },
+        { name: "Machine Learning", level: 85 },
+        { name: "Data Analysis", level: 90 },
+        { name: "NLP", level: 80 },
+        { name: "LLM Research", level: 85 },
       ],
-      technologies: ["Figma", "Adobe XD", "Sketch", "InVision", "Principle", "Framer", "Design Systems", "Accessibility"]
+      technologies: ["Machine Learning", "Data Science", "NLP", "LLM", "AI Research", "Statistical Analysis"]
     },
     {
-      title: "Cloud & DevOps",
+      title: "Tools & Platforms",
       icon: <Cloud className="h-6 w-6" />,
       skills: [
-        { name: "AWS", level: 85 },
-        { name: "Docker", level: 80 },
-        { name: "CI/CD", level: 85 },
-        { name: "Git", level: 95 },
+        { name: "Git", level: 85 },
+        { name: "Supabase", level: 80 },
+        { name: "Node.js", level: 75 },
+        { name: "Tailwind CSS", level: 85 },
       ],
-      technologies: ["AWS", "Docker", "Kubernetes", "GitHub Actions", "Jenkins", "Terraform", "Vercel", "Netlify"]
+      technologies: ["Git", "Supabase", "Node.js", "Tailwind CSS", "Bootstrap", "WPILib", "Gemini AI"]
     }
   ];
 
   const additionalSkills = [
-    { icon: <Globe className="h-5 w-5" />, name: "Web Performance" },
-    { icon: <Smartphone className="h-5 w-5" />, name: "Mobile Development" },
+    { icon: <Globe className="h-5 w-5" />, name: "Research" },
+    { icon: <Smartphone className="h-5 w-5" />, name: "Robotics" },
     { icon: <GitBranch className="h-5 w-5" />, name: "Version Control" },
-    { icon: <Zap className="h-5 w-5" />, name: "Optimization" },
+    { icon: <Zap className="h-5 w-5" />, name: "Problem Solving" },
   ];
 
   return (

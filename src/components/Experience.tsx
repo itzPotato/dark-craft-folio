@@ -5,42 +5,68 @@ import { CalendarDays, MapPin } from "lucide-react";
 const Experience = () => {
   const experiences = [
     {
-      title: "Senior Full-Stack Developer",
-      company: "TechCorp Solutions",
+      title: "Full Stack Developer Intern",
+      company: "Vengo AI",
       location: "Remote",
-      duration: "2022 - Present",
-      description: "Led development of microservices architecture serving 100K+ users. Implemented modern React applications with TypeScript and deployed on AWS cloud infrastructure.",
-      technologies: ["React", "TypeScript", "Node.js", "AWS", "PostgreSQL", "Docker"],
+      duration: "Jun. 2025 - Present",
+      description: "Responsible for coding and maintaining the frontend and backend for an upcoming company project. Working closely with CEO Jason Sherman and a team of 5 other people to improve website people to improve website user-interface.",
+      technologies: ["React", "Node.js", "JavaScript", "HTML", "CSS", "Git"],
       highlights: [
-        "Reduced page load times by 40% through optimization",
-        "Mentored 3 junior developers",
-        "Architected scalable backend systems"
+        "Collaborated with CEO and development team",
+        "Improved website user interface",
+        "Full-stack development responsibilities"
       ]
     },
     {
-      title: "Frontend Developer",
-      company: "DesignStudio Inc",
-      location: "San Francisco, CA",
-      duration: "2020 - 2022",
-      description: "Developed responsive web applications and design systems for enterprise clients. Collaborated closely with UX designers to implement pixel-perfect interfaces.",
-      technologies: ["React", "Vue.js", "SCSS", "Figma", "JavaScript", "REST APIs"],
+      title: "Data Science Intern",
+      company: "IPMD, Inc.",
+      location: "Remote",
+      duration: "Jan. 2025 - Apr. 2025",
+      description: "Curate and preprocess datasets to improve the performance of an advanced emotional AI system, ensuring data accuracy and optimizing training through emotional cue interpretation.",
+      technologies: ["Python", "Data Science", "Machine Learning", "AI", "Data Processing"],
       highlights: [
-        "Built reusable component library used across 15+ projects",
-        "Improved mobile user experience by 60%",
-        "Led frontend architecture decisions"
+        "Enhanced emotional AI system performance",
+        "Optimized training through emotional cue interpretation", 
+        "Ensured data accuracy and preprocessing"
       ]
     },
     {
-      title: "Junior Web Developer",
-      company: "StartupXYZ",
-      location: "Austin, TX",
-      duration: "2019 - 2020",
-      description: "Developed and maintained web applications in a fast-paced startup environment. Gained experience in full-stack development and agile methodologies.",
-      technologies: ["JavaScript", "PHP", "MySQL", "HTML", "CSS", "jQuery"],
+      title: "Student Researcher",
+      company: "Aspiring Scholars Directed Research Program",
+      location: "Remote",
+      duration: "Dec. 2024 - Present",
+      description: "Under Dr. Phil Mui, I research hallucination patterns in biology document summarization, comparing text-only LLM pipelines (e.g., Llamaizer, DocQA) to multimodal pipelines (e.g., LlaVA, Claude, ChatGPT).",
+      technologies: ["Python", "LLM", "Machine Learning", "Research", "Data Analysis"],
       highlights: [
-        "Delivered 20+ features in first 6 months",
-        "Improved application performance by 25%",
-        "Participated in product planning and user research"
+        "Compared experimental using biomedical research papers with embedded visual data",
+        "Conducted evaluations using automated metrics and human/LLM judgment",
+        "Produced visualizations in matplotlib/seaborn and co-authored research paper"
+      ]
+    },
+    {
+      title: "Student Intern",
+      company: "Extern - Beats by Dre Data Analytics Internship",
+      location: "Remote", 
+      duration: "Mar. 2025 - Present",
+      description: "Developing segmented data analytics skills via researching Gen Z trends and preferences for audio devices, leveraging Python, data science libraries, and NLP tools like Gemini AI for sentiment analysis and consumer feedback visualization.",
+      technologies: ["Python", "Data Analytics", "NLP", "Gemini AI", "Data Visualization"],
+      highlights: [
+        "Researched Gen Z trends for audio devices",
+        "Implemented sentiment analysis and consumer feedback visualization",
+        "Synthesized insights through automated reports for actionable business strategies"
+      ]
+    },
+    {
+      title: "Software Team Member",
+      company: "First Robotics Competition Rotaries 9114",
+      location: "Fremont, CA",
+      duration: "May 2025 - Present",
+      description: "Develop control algorithms using Java and the WPILib library to enable autonomous and driver-operated functions, including drivetrain, arm, intake, and ball planning systems.",
+      technologies: ["Java", "WPILib", "Robotics", "Control Systems"],
+      highlights: [
+        "Implemented advanced systems like vision pipelines and decision-making logic",
+        "Enhanced robot performance during competitions",
+        "Collaborated on autonomous and manual control systems"
       ]
     }
   ];

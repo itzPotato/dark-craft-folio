@@ -3,10 +3,10 @@ import { Badge } from "@/components/ui/badge";
 
 const About = () => {
   const highlights = [
-    "5+ years experience",
-    "50+ projects delivered", 
-    "Remote-first mindset",
-    "Open source contributor"
+    "4.0 GPA Student",
+    "Multiple Internships", 
+    "Research Experience",
+    "Leadership Roles"
   ];
 
   return (
@@ -25,12 +25,12 @@ const About = () => {
           <div className="space-y-6">
             <Card className="gradient-card hover-lift shadow-card">
               <CardContent className="p-8">
-                <h3 className="text-2xl font-semibold mb-4 text-primary">My Mission</h3>
+                <h3 className="text-2xl font-semibold mb-4 text-primary">My Journey</h3>
                 <p className="text-muted-foreground leading-relaxed mb-6">
-                  I believe in the power of technology to solve real-world problems. With a strong foundation in both frontend and backend development, I create seamless user experiences backed by robust, scalable architectures.
+                  I'm a rising sophomore at American High School in Fremont, CA, with a passion for technology and innovation. My experience spans full-stack development, data science, and research, where I focus on creating impactful solutions using cutting-edge technologies.
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
-                  When I'm not coding, you'll find me exploring new technologies, contributing to open source projects, or mentoring upcoming developers in the community.
+                  From working on AI systems to developing web applications, I enjoy tackling complex challenges and contributing to meaningful projects that drive technological advancement.
                 </p>
               </CardContent>
             </Card>
@@ -49,21 +49,31 @@ const About = () => {
           </div>
 
           <div className="space-y-6">
+            <div className="flex items-center justify-center mb-6">
+              <div className="relative w-48 h-48 rounded-full overflow-hidden border-4 border-primary/20">
+                <img 
+                  src="/lovable-uploads/043c0fd9-2f34-4af9-82d1-18ee71c0bcee.png" 
+                  alt="Rohan Sashank Babbellapati"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+            
             <Card className="gradient-card hover-lift shadow-card">
               <CardContent className="p-8">
                 <h3 className="text-2xl font-semibold mb-4 text-primary">Background</h3>
                 <div className="space-y-4">
                   <div>
                     <h4 className="font-medium text-foreground">Education</h4>
-                    <p className="text-muted-foreground">B.S. Computer Science, Tech University</p>
+                    <p className="text-muted-foreground">American High School, Fremont, CA • Rising Sophomore • 4.0 GPA</p>
                   </div>
                   <div>
                     <h4 className="font-medium text-foreground">Specialization</h4>
-                    <p className="text-muted-foreground">Full-stack web development, UI/UX design, cloud architecture</p>
+                    <p className="text-muted-foreground">Full-stack development, Data Science, AI/ML Research</p>
                   </div>
                   <div>
                     <h4 className="font-medium text-foreground">Current Focus</h4>
-                    <p className="text-muted-foreground">React, Node.js, TypeScript, AWS, modern design systems</p>
+                    <p className="text-muted-foreground">React, Python, Java, SQL, Machine Learning, Research</p>
                   </div>
                 </div>
               </CardContent>
@@ -71,12 +81,12 @@ const About = () => {
 
             <Card className="gradient-card hover-lift shadow-card">
               <CardContent className="p-8">
-                <h3 className="text-2xl font-semibold mb-4 text-primary">Values</h3>
+                <h3 className="text-2xl font-semibold mb-4 text-primary">Achievements</h3>
                 <ul className="space-y-2 text-muted-foreground">
-                  <li>• Clean, maintainable code</li>
-                  <li>• User-centered design thinking</li>
-                  <li>• Continuous learning and growth</li>
-                  <li>• Collaborative team culture</li>
+                  <li>• 1st place in CEMC Gauss Mathematics Contest</li>
+                  <li>• Outstanding Results in Cambridge Checkpoints</li>
+                  <li>• Harvard CS50 Computer Science course completion</li>
+                  <li>• Multiple research and internship experiences</li>
                 </ul>
               </CardContent>
             </Card>

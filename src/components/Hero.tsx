@@ -24,8 +24,8 @@ const Hero = () => {
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-20 left-20 w-32 h-32 rounded-full bg-primary/10 animate-glow-pulse"></div>
-        <div className="absolute bottom-32 right-32 w-48 h-48 rounded-full bg-electric-blue/10 animate-glow-pulse delay-1000"></div>
-        <div className="absolute top-1/2 left-1/4 w-24 h-24 rounded-full bg-mint-green/10 animate-glow-pulse delay-500"></div>
+        <div className="absolute bottom-32 right-32 w-48 h-48 rounded-full bg-mint-green/10 animate-glow-pulse delay-1000"></div>
+        <div className="absolute top-1/2 left-1/4 w-24 h-24 rounded-full bg-sage-green/10 animate-glow-pulse delay-500"></div>
       </div>
 
       <div className="relative z-10 text-center max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -33,12 +33,12 @@ const Hero = () => {
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
             <span className="block text-foreground">Hi, I'm</span>
             <span className="block gradient-primary bg-clip-text text-transparent">
-              Alex Johnson
+              Rohan Sashank Babbellapati
             </span>
           </h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
-            Full-Stack Developer & UI/UX Designer crafting exceptional digital experiences with modern technologies
+            Full-Stack Developer & Data Science Researcher passionate about AI and innovative technology solutions
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
@@ -61,7 +61,7 @@ const Hero = () => {
 
           <div className="flex items-center justify-center space-x-6 mb-12">
             <a 
-              href="https://github.com" 
+              href="https://github.com/itzPotato" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-smooth hover-glow p-2"
@@ -69,7 +69,7 @@ const Hero = () => {
               <Github className="h-6 w-6" />
             </a>
             <a 
-              href="https://linkedin.com" 
+              href="https://linkedin.com/in/rohan-babbellapati" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-smooth hover-glow p-2"
@@ -77,7 +77,7 @@ const Hero = () => {
               <Linkedin className="h-6 w-6" />
             </a>
             <a 
-              href="mailto:alex@example.com"
+              href="mailto:brsashank@gmail.com"
               className="text-muted-foreground hover:text-primary transition-smooth hover-glow p-2"
             >
               <Mail className="h-6 w-6" />

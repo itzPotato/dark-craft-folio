@@ -18,8 +18,8 @@ All colors MUST be HSL.
     --popover: 225 25% 8%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 180 100% 50%;
-    --primary-foreground: 222 84% 3%;
+    --primary: 142 76% 36%;
+    --primary-foreground: 0 0% 98%;
 
     --secondary: 225 25% 12%;
     --secondary-foreground: 210 40% 90%;
@@ -27,8 +27,8 @@ All colors MUST be HSL.
     --muted: 225 25% 12%;
     --muted-foreground: 215 20% 65%;
 
-    --accent: 180 100% 50%;
-    --accent-foreground: 222 84% 3%;
+    --accent: 142 76% 36%;
+    --accent-foreground: 0 0% 98%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 210 40% 98%;
@@ -40,12 +40,12 @@ All colors MUST be HSL.
     --radius: 0.75rem;
 
     /* Custom portfolio colors */
-    --electric-blue: 220 100% 60%;
-    --mint-green: 160 100% 45%;
-    --purple-accent: 280 100% 70%;
+    --emerald-green: 142 76% 36%;
+    --mint-green: 152 88% 45%;
+    --sage-green: 120 25% 65%;
     
     /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--electric-blue)));
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--mint-green)));
     --gradient-hero: linear-gradient(135deg, hsl(var(--background)) 0%, hsl(225 25% 5%) 50%, hsl(var(--background)) 100%);
     --gradient-card: linear-gradient(145deg, hsl(var(--card)), hsl(225 25% 10%));
     

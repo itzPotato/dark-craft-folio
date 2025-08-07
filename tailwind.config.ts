@@ -52,9 +52,9 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				'electric-blue': 'hsl(var(--electric-blue))',
+				'emerald-green': 'hsl(var(--emerald-green))',
 				'mint-green': 'hsl(var(--mint-green))',
-				'purple-accent': 'hsl(var(--purple-accent))'
+				'sage-green': 'hsl(var(--sage-green))'
 			},
 			fontFamily: {
 				sans: ['Inter', 'system-ui', 'sans-serif'],

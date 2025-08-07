@@ -54,26 +54,26 @@ const Contact = () => {
     {
       icon: <Mail className="h-5 w-5" />,
       label: "Email",
-      value: "alex@example.com",
-      link: "mailto:alex@example.com"
+      value: "brsashank@gmail.com",
+      link: "mailto:brsashank@gmail.com"
     },
     {
       icon: <Phone className="h-5 w-5" />,
       label: "Phone",
-      value: "+1 (555) 123-4567",
-      link: "tel:+15551234567"
+      value: "(858) 331-4166",
+      link: "tel:+18583314166"
     },
     {
       icon: <MapPin className="h-5 w-5" />,
       label: "Location",
-      value: "San Francisco, CA",
+      value: "Fremont, CA",
       link: null
     },
     {
       icon: <Calendar className="h-5 w-5" />,
-      label: "Schedule Call",
-      value: "Book a meeting",
-      link: "https://calendly.com/example"
+      label: "GitHub",
+      value: "github.com/itzPotato",
+      link: "https://github.com/itzPotato"
     }
   ];
 
@@ -81,20 +81,20 @@ const Contact = () => {
     {
       icon: <Github className="h-5 w-5" />,
       label: "GitHub",
-      url: "https://github.com/example",
-      username: "@alexjohnson"
+      url: "https://github.com/itzPotato",
+      username: "@itzPotato"
     },
     {
       icon: <Linkedin className="h-5 w-5" />,
       label: "LinkedIn", 
-      url: "https://linkedin.com/in/example",
-      username: "Alex Johnson"
+      url: "https://linkedin.com/in/rohan-babbellapati",
+      username: "Rohan Babbellapati"
     },
     {
-      icon: <Twitter className="h-5 w-5" />,
-      label: "Twitter",
-      url: "https://twitter.com/example",
-      username: "@alexjohnson"
+      icon: <Mail className="h-5 w-5" />,
+      label: "Email",
+      url: "mailto:brsashank@gmail.com",
+      username: "brsashank@gmail.com"
     }
   ];
 
@@ -252,12 +252,12 @@ const Contact = () => {
                   <span className="text-sm font-medium text-foreground">Available for projects</span>
                 </div>
                 <p className="text-sm text-muted-foreground mb-4">
-                  I'm currently accepting new projects and collaborations. Let's build something amazing together!
+                  I'm a rising sophomore interested in internships, research opportunities, and collaborative projects in technology and data science!
                 </p>
                 <div className="flex flex-wrap gap-2">
-                  <Badge variant="secondary" className="text-xs">Full-time</Badge>
-                  <Badge variant="secondary" className="text-xs">Contract</Badge>
-                  <Badge variant="secondary" className="text-xs">Consulting</Badge>
+                  <Badge variant="secondary" className="text-xs">Internships</Badge>
+                  <Badge variant="secondary" className="text-xs">Research</Badge>
+                  <Badge variant="secondary" className="text-xs">Projects</Badge>
                 </div>
               </CardContent>
             </Card>
