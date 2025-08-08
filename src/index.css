@@ -39,10 +39,10 @@ All colors MUST be HSL.
 
     --radius: 0.75rem;
 
-    /* Custom portfolio colors */
-    --emerald-green: 142 76% 36%;
-    --mint-green: 152 88% 45%;
-    --sage-green: 120 25% 65%;
+    /* Custom portfolio colors - Cyrion Labs inspired */
+    --emerald-green: 150 80% 40%;
+    --mint-green: 150 80% 40%;
+    --sage-green: 150 80% 40%;
     
     /* Gradients */
     --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--mint-green)));
@@ -169,5 +169,26 @@ All colors MUST be HSL.
   
   .hover-glow {
     @apply transition-smooth hover:shadow-glow;
+  }
+  
+  /* Card hover effects */
+  .hover-card {
+    @apply transition-all duration-300 hover:shadow-[0_0_30px_hsl(var(--primary)/0.3)] hover:border-primary/50;
+  }
+  
+  /* Scroll animations */
+  @keyframes slide-in {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-slide-in {
+    animation: slide-in 0.6s ease-out forwards;
   }
 }

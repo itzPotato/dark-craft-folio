@@ -40,25 +40,92 @@ const Projects = () => {
     githubUrl: "https://github.com/example",
     category: "Data Visualization"
   }];
-  const publications = [{
-    title: "Modern React Performance Optimization",
-    description: "A comprehensive guide to optimizing React applications for production, covering code splitting, lazy loading, and bundle analysis.",
-    type: "Article",
-    url: "https://medium.com/example",
-    date: "2024"
-  }, {
-    title: "Building Scalable Design Systems",
-    description: "Best practices for creating and maintaining design systems that scale across multiple teams and products.",
-    type: "Conference Talk",
-    url: "https://youtube.com/example",
-    date: "2023"
-  }, {
-    title: "TypeScript in Large-Scale Applications",
-    description: "Lessons learned from implementing TypeScript in enterprise applications with hundreds of developers.",
-    type: "Workshop",
-    url: "https://github.com/example",
-    date: "2023"
-  }];
-  return;
+  return (
+    <section id="projects" className="py-20 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto">
+        <div className="text-center mb-16 animate-fade-in">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 gradient-primary bg-clip-text text-transparent">
+            Featured Projects
+          </h2>
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            A showcase of my recent work in full-stack development, AI research, and innovative solutions.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {projects.map((project, index) => (
+            <div 
+              key={index} 
+              className="group project-card opacity-0 translate-y-8 animate-slide-in"
+              style={{ animationDelay: `${index * 0.1}s`, animationFillMode: 'forwards' }}
+            >
+              <Card className="h-full hover-card transition-all duration-300 border-border/30 bg-card/50 backdrop-blur-sm">
+                <div className="aspect-video w-full overflow-hidden rounded-t-lg">
+                  <img 
+                    src={project.image} 
+                    alt={project.title}
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  />
+                </div>
+                
+                <CardHeader>
+                  <div className="flex items-center justify-between mb-2">
+                    <Badge variant="secondary" className="bg-primary/10 text-primary border-primary/20">
+                      {project.category}
+                    </Badge>
+                  </div>
+                  <CardTitle className="text-foreground group-hover:text-primary transition-colors">
+                    {project.title}
+                  </CardTitle>
+                </CardHeader>
+
+                <CardContent className="space-y-4">
+                  <p className="text-muted-foreground leading-relaxed">
+                    {project.description}
+                  </p>
+
+                  <div className="space-y-3">
+                    <div>
+                      <h4 className="text-sm font-semibold text-foreground mb-2">Technologies</h4>
+                      <div className="flex flex-wrap gap-2">
+                        {project.technologies.map((tech) => (
+                          <Badge key={tech} variant="outline" className="text-xs border-primary/30 text-primary/80">
+                            {tech}
+                          </Badge>
+                        ))}
+                      </div>
+                    </div>
+
+                    <div>
+                      <h4 className="text-sm font-semibold text-foreground mb-2">Key Features</h4>
+                      <ul className="text-sm text-muted-foreground space-y-1">
+                        {project.features.map((feature, idx) => (
+                          <li key={idx} className="flex items-center">
+                            <span className="w-1 h-1 bg-primary rounded-full mr-2"></span>
+                            {feature}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+
+                    <div className="flex gap-3 pt-4">
+                      <Button variant="outline" size="sm" className="flex-1 border-primary/30 text-primary hover:bg-primary/10">
+                        <Github className="w-4 h-4 mr-2" />
+                        Code
+                      </Button>
+                      <Button size="sm" className="flex-1 bg-primary hover:bg-primary/90">
+                        <ExternalLink className="w-4 h-4 mr-2" />
+                        Live Demo
+                      </Button>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
 };
 export default Projects;

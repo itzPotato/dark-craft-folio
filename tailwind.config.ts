@@ -109,6 +109,16 @@ export default {
 					'50%': {
 						boxShadow: '0 0 40px hsl(var(--primary) / 0.3)'
 					}
+				},
+				'card-hover': {
+					'0%': {
+						boxShadow: '0 0 0 hsl(var(--primary) / 0)',
+						borderColor: 'hsl(var(--border))'
+					},
+					'100%': {
+						boxShadow: '0 0 30px hsl(var(--primary) / 0.3)',
+						borderColor: 'hsl(var(--primary) / 0.5)'
+					}
 				}
 			},
 			animation: {
@@ -116,7 +126,8 @@ export default {
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'fade-in': 'fade-in 0.6s ease-out',
 				'slide-in': 'slide-in 0.5s ease-out',
-				'glow-pulse': 'glow-pulse 2s ease-in-out infinite'
+				'glow-pulse': 'glow-pulse 2s ease-in-out infinite',
+				'card-hover': 'card-hover 0.3s ease-out'
 			}
 		}
 	},
