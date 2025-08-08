@@ -1,78 +1,95 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
-import { 
-  Code, 
-  Palette, 
-  Database, 
-  Cloud, 
-  Globe, 
-  Smartphone,
-  GitBranch,
-  Zap
-} from "lucide-react";
-
+import { Code, Palette, Database, Cloud, Globe, Smartphone, GitBranch, Zap } from "lucide-react";
 const Skills = () => {
-  const skillCategories = [
-    {
-      title: "Programming Languages",
-      icon: <Code className="h-6 w-6" />,
-      skills: [
-        { name: "Python", level: 95 },
-        { name: "Java", level: 90 },
-        { name: "JavaScript", level: 85 },
-        { name: "SQL", level: 90 },
-      ],
-      technologies: ["Python", "Java", "JavaScript", "HTML/CSS", "SQL", "C"]
-    },
-    {
-      title: "Frameworks & Libraries", 
-      icon: <Database className="h-6 w-6" />,
-      skills: [
-        { name: "React.js", level: 85 },
-        { name: "Pygame", level: 80 },
-        { name: "Flask", level: 75 },
-        { name: "Pandas", level: 90 },
-      ],
-      technologies: ["React.js", "Pygame", "Flask", "Pandas", "NumPy", "Matplotlib", "Seaborn", "scikit-learn"]
-    },
-    {
-      title: "Data Science & AI",
-      icon: <Zap className="h-6 w-6" />,
-      skills: [
-        { name: "Machine Learning", level: 85 },
-        { name: "Data Analysis", level: 90 },
-        { name: "NLP", level: 80 },
-        { name: "LLM Research", level: 85 },
-      ],
-      technologies: ["Machine Learning", "Data Science", "NLP", "LLM", "AI Research", "Statistical Analysis"]
-    },
-    {
-      title: "Tools & Platforms",
-      icon: <Cloud className="h-6 w-6" />,
-      skills: [
-        { name: "Git", level: 85 },
-        { name: "Supabase", level: 80 },
-        { name: "Node.js", level: 75 },
-        { name: "Tailwind CSS", level: 85 },
-      ],
-      technologies: ["Git", "Supabase", "Node.js", "Tailwind CSS", "Bootstrap", "WPILib", "Gemini AI"]
-    }
-  ];
-
-  const additionalSkills = [
-    { icon: <Globe className="h-5 w-5" />, name: "Research" },
-    { icon: <Smartphone className="h-5 w-5" />, name: "Robotics" },
-    { icon: <GitBranch className="h-5 w-5" />, name: "Version Control" },
-    { icon: <Zap className="h-5 w-5" />, name: "Problem Solving" },
-  ];
-
-  return (
-    <section id="skills" className="py-20 px-4 sm:px-6 lg:px-8">
+  const skillCategories = [{
+    title: "Programming Languages",
+    icon: <Code className="h-6 w-6" />,
+    skills: [{
+      name: "Python",
+      level: 95
+    }, {
+      name: "Java",
+      level: 90
+    }, {
+      name: "JavaScript",
+      level: 85
+    }, {
+      name: "SQL",
+      level: 90
+    }],
+    technologies: ["Python", "Java", "JavaScript", "HTML/CSS", "SQL", "C"]
+  }, {
+    title: "Frameworks & Libraries",
+    icon: <Database className="h-6 w-6" />,
+    skills: [{
+      name: "React.js",
+      level: 85
+    }, {
+      name: "Pygame",
+      level: 80
+    }, {
+      name: "Flask",
+      level: 75
+    }, {
+      name: "Pandas",
+      level: 90
+    }],
+    technologies: ["React.js", "Pygame", "Flask", "Pandas", "NumPy", "Matplotlib", "Seaborn", "scikit-learn"]
+  }, {
+    title: "Data Science & AI",
+    icon: <Zap className="h-6 w-6" />,
+    skills: [{
+      name: "Machine Learning",
+      level: 85
+    }, {
+      name: "Data Analysis",
+      level: 90
+    }, {
+      name: "NLP",
+      level: 80
+    }, {
+      name: "LLM Research",
+      level: 85
+    }],
+    technologies: ["Machine Learning", "Data Science", "NLP", "LLM", "AI Research", "Statistical Analysis"]
+  }, {
+    title: "Tools & Platforms",
+    icon: <Cloud className="h-6 w-6" />,
+    skills: [{
+      name: "Git",
+      level: 85
+    }, {
+      name: "Supabase",
+      level: 80
+    }, {
+      name: "Node.js",
+      level: 75
+    }, {
+      name: "Tailwind CSS",
+      level: 85
+    }],
+    technologies: ["Git", "Supabase", "Node.js", "Tailwind CSS", "Bootstrap", "WPILib", "Gemini AI"]
+  }];
+  const additionalSkills = [{
+    icon: <Globe className="h-5 w-5" />,
+    name: "Research"
+  }, {
+    icon: <Smartphone className="h-5 w-5" />,
+    name: "Robotics"
+  }, {
+    icon: <GitBranch className="h-5 w-5" />,
+    name: "Version Control"
+  }, {
+    icon: <Zap className="h-5 w-5" />,
+    name: "Problem Solving"
+  }];
+  return <section id="skills" className="py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Skills & <span className="gradient-primary bg-clip-text text-transparent">Technologies</span>
+            Skills & 
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             A comprehensive toolkit for building modern digital solutions
@@ -80,8 +97,7 @@ const Skills = () => {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-8 mb-12">
-          {skillCategories.map((category, index) => (
-            <Card key={index} className="gradient-card card-glow-hover shadow-card transition-smooth">
+          {skillCategories.map((category, index) => <Card key={index} className="gradient-card hover-lift shadow-card transition-smooth">
               <CardHeader>
                 <CardTitle className="flex items-center gap-3 text-primary">
                   {category.icon}
@@ -90,49 +106,40 @@ const Skills = () => {
               </CardHeader>
               <CardContent className="space-y-6">
                 <div className="space-y-4">
-                  {category.skills.map((skill, idx) => (
-                    <div key={idx} className="space-y-2">
+                  {category.skills.map((skill, idx) => <div key={idx} className="space-y-2">
                       <div className="flex justify-between items-center">
                         <span className="text-sm font-medium text-foreground">{skill.name}</span>
                         <span className="text-sm text-muted-foreground">{skill.level}%</span>
                       </div>
                       <Progress value={skill.level} className="h-2" />
-                    </div>
-                  ))}
+                    </div>)}
                 </div>
                 
                 <div className="pt-4 border-t border-border/50">
                   <div className="flex flex-wrap gap-2">
-                    {category.technologies.map((tech, idx) => (
-                      <Badge key={idx} variant="outline" className="interactive-hover text-xs">
+                    {category.technologies.map((tech, idx) => <Badge key={idx} variant="outline" className="hover-glow transition-smooth text-xs">
                         {tech}
-                      </Badge>
-                    ))}
+                      </Badge>)}
                   </div>
                 </div>
               </CardContent>
-            </Card>
-          ))}
+            </Card>)}
         </div>
 
-        <Card className="gradient-card card-glow-hover shadow-card">
+        <Card className="gradient-card shadow-card">
           <CardHeader>
             <CardTitle className="text-center text-primary">Additional Expertise</CardTitle>
           </CardHeader>
           <CardContent>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-              {additionalSkills.map((skill, index) => (
-                <div key={index} className="flex items-center gap-3 p-4 rounded-lg bg-secondary/50 interactive-hover">
+              {additionalSkills.map((skill, index) => <div key={index} className="flex items-center gap-3 p-4 rounded-lg bg-secondary/50 hover-lift transition-smooth">
                   <div className="text-primary">{skill.icon}</div>
                   <span className="text-sm font-medium">{skill.name}</span>
-                </div>
-              ))}
+                </div>)}
             </div>
           </CardContent>
         </Card>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Skills;
