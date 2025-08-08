@@ -14,7 +14,6 @@ const Hero = () => {
       <div className="relative z-10 text-center max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="animate-fade-in">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-            <span className="block text-foreground">Hi, I'm</span>
             <span className="block gradient-primary bg-clip-text text-transparent">Rohan Sashank Babbellapati</span>
           </h1>
           
