@@ -20,7 +20,6 @@ const Navigation = () => {
     { href: "#experience", label: "Experience" },
     { href: "#skills", label: "Skills" },
     { href: "#awards", label: "Awards" },
-    { href: "#projects", label: "Projects" },
     { href: "#contact", label: "Contact" },
   ];
 
@@ -42,7 +41,7 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0">
             <span className="text-xl font-bold gradient-primary bg-clip-text text-transparent">
-              Portfolio
+              Rohan Babbellapati
             </span>
           </div>
 

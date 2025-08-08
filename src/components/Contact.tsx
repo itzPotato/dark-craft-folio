@@ -112,7 +112,7 @@ const Contact = () => {
 
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Contact Form */}
-          <Card className="gradient-card shadow-card">
+          <Card className="gradient-card card-glow-hover shadow-card">
             <CardHeader>
               <CardTitle className="text-primary">Send a Message</CardTitle>
               <p className="text-muted-foreground">
@@ -192,13 +192,13 @@ const Contact = () => {
 
           {/* Contact Information */}
           <div className="space-y-8">
-            <Card className="gradient-card shadow-card">
+            <Card className="gradient-card card-glow-hover shadow-card">
               <CardHeader>
                 <CardTitle className="text-primary">Contact Information</CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
                 {contactInfo.map((info, index) => (
-                  <div key={index} className="flex items-center gap-4 p-3 rounded-lg bg-secondary/30 hover-lift transition-smooth">
+                  <div key={index} className="flex items-center gap-4 p-3 rounded-lg bg-secondary/30 interactive-hover">
                     <div className="text-primary">{info.icon}</div>
                     <div className="flex-1">
                       <div className="text-sm text-muted-foreground">{info.label}</div>
@@ -220,7 +220,7 @@ const Contact = () => {
               </CardContent>
             </Card>
 
-            <Card className="gradient-card shadow-card">
+            <Card className="gradient-card card-glow-hover shadow-card">
               <CardHeader>
                 <CardTitle className="text-primary">Connect on Social</CardTitle>
               </CardHeader>
@@ -245,7 +245,7 @@ const Contact = () => {
               </CardContent>
             </Card>
 
-            <Card className="gradient-card shadow-card">
+            <Card className="gradient-card card-glow-hover shadow-card">
               <CardContent className="p-6">
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-3 h-3 rounded-full bg-mint-green animate-pulse"></div>

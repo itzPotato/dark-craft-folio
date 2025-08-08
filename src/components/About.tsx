@@ -15,7 +15,7 @@ const About = () => {
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
-            <Card className="gradient-card hover-lift shadow-card">
+            <Card className="gradient-card card-glow-hover shadow-card">
               <CardContent className="p-8">
                 <h3 className="text-2xl font-semibold mb-4 text-primary">My Journey</h3>
                 <p className="text-muted-foreground leading-relaxed mb-6">
@@ -28,7 +28,7 @@ const About = () => {
             </Card>
 
             <div className="grid grid-cols-2 gap-4">
-              {highlights.map((highlight, index) => <Badge key={index} variant="secondary" className="p-3 text-center justify-center hover-glow transition-smooth">
+              {highlights.map((highlight, index) => <Badge key={index} variant="secondary" className="p-3 text-center justify-center interactive-hover">
                   {highlight}
                 </Badge>)}
             </div>
@@ -41,7 +41,7 @@ const About = () => {
               </div>
             </div>
             
-            <Card className="gradient-card hover-lift shadow-card">
+            <Card className="gradient-card card-glow-hover shadow-card">
               <CardContent className="p-8">
                 <h3 className="text-2xl font-semibold mb-4 text-primary">Background</h3>
                 <div className="space-y-4">
@@ -61,7 +61,7 @@ const About = () => {
               </CardContent>
             </Card>
 
-            <Card className="gradient-card hover-lift shadow-card">
+            <Card className="gradient-card card-glow-hover shadow-card">
               <CardContent className="p-8">
                 <h3 className="text-2xl font-semibold mb-4 text-primary">Achievements</h3>
                 <ul className="space-y-2 text-muted-foreground">

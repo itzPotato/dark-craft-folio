@@ -59,10 +59,10 @@ const Awards = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Awards & <span className="gradient-primary bg-clip-text text-transparent">Leadership</span>
+            Awards & <span className="gradient-primary bg-clip-text text-transparent">Certificates</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Recognition for academic excellence and community impact
+            Leadership Roles
           </p>
         </div>
 
@@ -73,7 +73,7 @@ const Awards = () => {
           </h3>
           <div className="space-y-6">
             {awards.map((award, index) => (
-              <Card key={index} className="gradient-card hover-lift shadow-card transition-smooth">
+              <Card key={index} className="gradient-card card-glow-hover shadow-card transition-smooth">
                 <CardHeader>
                   <div className="flex items-start justify-between">
                     <div className="flex items-start gap-4">
@@ -109,7 +109,7 @@ const Awards = () => {
           </h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {leadership.map((role, index) => (
-              <Card key={index} className="gradient-card hover-lift shadow-card transition-smooth">
+              <Card key={index} className="gradient-card card-glow-hover shadow-card transition-smooth">
                 <CardContent className="p-6">
                   <div className="flex items-center gap-2 mb-3">
                     <Trophy className="h-5 w-5 text-primary" />

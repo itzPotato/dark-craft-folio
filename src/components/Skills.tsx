@@ -81,7 +81,7 @@ const Skills = () => {
 
         <div className="grid lg:grid-cols-2 gap-8 mb-12">
           {skillCategories.map((category, index) => (
-            <Card key={index} className="gradient-card hover-lift shadow-card transition-smooth">
+            <Card key={index} className="gradient-card card-glow-hover shadow-card transition-smooth">
               <CardHeader>
                 <CardTitle className="flex items-center gap-3 text-primary">
                   {category.icon}
@@ -104,7 +104,7 @@ const Skills = () => {
                 <div className="pt-4 border-t border-border/50">
                   <div className="flex flex-wrap gap-2">
                     {category.technologies.map((tech, idx) => (
-                      <Badge key={idx} variant="outline" className="hover-glow transition-smooth text-xs">
+                      <Badge key={idx} variant="outline" className="interactive-hover text-xs">
                         {tech}
                       </Badge>
                     ))}
@@ -115,14 +115,14 @@ const Skills = () => {
           ))}
         </div>
 
-        <Card className="gradient-card shadow-card">
+        <Card className="gradient-card card-glow-hover shadow-card">
           <CardHeader>
             <CardTitle className="text-center text-primary">Additional Expertise</CardTitle>
           </CardHeader>
           <CardContent>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {additionalSkills.map((skill, index) => (
-                <div key={index} className="flex items-center gap-3 p-4 rounded-lg bg-secondary/50 hover-lift transition-smooth">
+                <div key={index} className="flex items-center gap-3 p-4 rounded-lg bg-secondary/50 interactive-hover">
                   <div className="text-primary">{skill.icon}</div>
                   <span className="text-sm font-medium">{skill.name}</span>
                 </div>

@@ -10,19 +10,12 @@ const Hero = () => {
       });
     }
   };
-  return <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-background">
-      {/* Animated background elements */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-20 left-20 w-32 h-32 rounded-full bg-primary/10 animate-glow-pulse"></div>
-        <div className="absolute bottom-32 right-32 w-48 h-48 rounded-full bg-mint-green/10 animate-glow-pulse delay-1000"></div>
-        <div className="absolute top-1/2 left-1/4 w-24 h-24 rounded-full bg-sage-green/10 animate-glow-pulse delay-500"></div>
-      </div>
-
+  return <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-black">
       <div className="relative z-10 text-center max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="animate-fade-in">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
             <span className="block text-foreground">Hi, I'm</span>
-            <span className="block gradient-primary bg-clip-text text-transparent">Rohan =ashank Babelapati</span>
+            <span className="block gradient-primary bg-clip-text text-transparent">Rohan Sashank Babbellapati</span>
           </h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
@@ -30,7 +23,7 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
-            <Button size="lg" className="hover-lift gradient-primary font-semibold px-8 py-3" onClick={() => document.querySelector("#projects")?.scrollIntoView({
+            <Button size="lg" className="hover-lift gradient-primary font-semibold px-8 py-3" onClick={() => document.querySelector("#experience")?.scrollIntoView({
             behavior: "smooth"
           })}>
               View My Work

@@ -76,7 +76,7 @@ const Experience = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Professional <span className="gradient-primary bg-clip-text text-transparent">Experience</span>
+            Professional <span className="gradient-primary bg-clip-text text-transparent">High Schooler</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Building innovative solutions across various industries and scales
@@ -85,7 +85,7 @@ const Experience = () => {
 
         <div className="space-y-8">
           {experiences.map((exp, index) => (
-            <Card key={index} className="gradient-card hover-lift shadow-card transition-smooth">
+            <Card key={index} className="gradient-card card-glow-hover shadow-card transition-smooth">
               <CardHeader>
                 <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
                   <div>
