@@ -38,7 +38,7 @@ const Experience = () => {
       description: "Under Dr. Phil Mui, I research hallucination patterns in biology document summarization, comparing text-only LLM pipelines (e.g., Llamaizer, DocQA) to multimodal pipelines (e.g., LlaVA, Claude, ChatGPT).",
       technologies: ["Python", "LLM", "Machine Learning", "Research", "Data Analysis"],
       highlights: [
-        "Compared experimental using biomedical research papers with embedded visual data",
+        "Compared experimental results using biomedical research papers with embedded visual data",
         "Conducted evaluations using automated metrics and human/LLM judgment",
         "Produced visualizations in matplotlib/seaborn and co-authored research paper"
       ]

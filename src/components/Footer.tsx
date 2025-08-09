@@ -48,7 +48,7 @@ const Footer = () => {
               <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-smooth hover-glow p-2">
                 <Github className="h-5 w-5" />
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-smooth hover-glow p-2">
+              <a href="https://www.linkedin.com/in/rohan-sashank-babbellapati-203660372/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-smooth hover-glow p-2">
                 <Linkedin className="h-5 w-5" />
               </a>
               <a href="mailto:alex@example.com" className="text-muted-foreground hover:text-primary transition-smooth hover-glow p-2">
@@ -78,7 +78,7 @@ const Footer = () => {
             <div className="space-y-2 text-sm text-muted-foreground">
               <p>Fremont, CA</p>
               <p>brsashank@gmail.com</p>
-              <p>+1 (555) 123-4567</p>
+              <p>+1 8583314166</p>
             </div>
             <div className="mt-4">
               <Badge className="bg-mint-green/20 text-mint-green border-mint-green/30">

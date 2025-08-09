@@ -19,9 +19,9 @@ const Skills = () => {
       icon: <Code className="h-6 w-6" />,
       skills: [
         { name: "Python", level: 95 },
-        { name: "Java", level: 90 },
-        { name: "JavaScript", level: 85 },
-        { name: "SQL", level: 90 },
+        { name: "Java", level: 45 },
+        { name: "JavaScript", level: 30 },
+        { name: "SQL", level: 75 },
       ],
       technologies: ["Python", "Java", "JavaScript", "HTML/CSS", "SQL", "C"]
     },
@@ -29,10 +29,10 @@ const Skills = () => {
       title: "Frameworks & Libraries", 
       icon: <Database className="h-6 w-6" />,
       skills: [
-        { name: "React.js", level: 85 },
-        { name: "Pygame", level: 80 },
-        { name: "Flask", level: 75 },
-        { name: "Pandas", level: 90 },
+        { name: "Pandas", level: 85 },
+        { name: "Matplotlib", level: 70 },
+        { name: "Flask", level: 90 },
+        { name: "NumPy", level: 65 },
       ],
       technologies: ["React.js", "Pygame", "Flask", "Pandas", "NumPy", "Matplotlib", "Seaborn", "scikit-learn"]
     },
@@ -40,10 +40,10 @@ const Skills = () => {
       title: "Data Science & AI",
       icon: <Zap className="h-6 w-6" />,
       skills: [
-        { name: "Machine Learning", level: 85 },
-        { name: "Data Analysis", level: 90 },
-        { name: "NLP", level: 80 },
+        { name: "Machine Learning", level: 65 },
+        { name: "Data Analysis", level: 95 },
         { name: "LLM Research", level: 85 },
+        { name: "AI Research", level: 70 },
       ],
       technologies: ["Machine Learning", "Data Science", "NLP", "LLM", "AI Research", "Statistical Analysis"]
     },
@@ -51,9 +51,9 @@ const Skills = () => {
       title: "Tools & Platforms",
       icon: <Cloud className="h-6 w-6" />,
       skills: [
-        { name: "Git", level: 85 },
-        { name: "Supabase", level: 80 },
-        { name: "Node.js", level: 75 },
+        { name: "Git", level: 80 },
+        { name: "Supabase", level: 45 },
+        { name: "Node.js", level: 60 },
         { name: "Tailwind CSS", level: 85 },
       ],
       technologies: ["Git", "Supabase", "Node.js", "Tailwind CSS", "Bootstrap", "WPILib", "Gemini AI"]
@@ -72,7 +72,7 @@ const Skills = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Skills & <span className="gradient-primary bg-clip-text text-transparent">Technologies</span>
+            Skills & <span className="gradient-primary bg-clip-text text-transparent">Knowledge</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             A comprehensive toolkit for building modern digital solutions
