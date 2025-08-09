@@ -15,7 +15,7 @@ const Hero = () => {
         <div className="animate-fade-in">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
             <span className="block text-foreground">Hi, I'm</span>
-            <span className="block gradient-primary bg-clip-text text-transparent">Rohan Sashank Babbellapati</span>
+            <span className="block text-foreground">Rohan Sashank Babbellapati</span>
           </h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
@@ -39,7 +39,7 @@ const Hero = () => {
             <a href="https://github.com/itzPotato" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-smooth hover-glow p-2">
               <Github className="h-6 w-6" />
             </a>
-            <a href="https://linkedin.com/in/rohan-babbellapati" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-smooth hover-glow p-2">
+            <a href="https://linkedin.com/in/rohan-sashank-babbellapati" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-smooth hover-glow p-2">
               <Linkedin className="h-6 w-6" />
             </a>
             <a href="mailto:brsashank@gmail.com" className="text-muted-foreground hover:text-primary transition-smooth hover-glow p-2">

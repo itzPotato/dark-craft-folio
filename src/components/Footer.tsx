@@ -38,8 +38,8 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-8">
           {/* Brand Section */}
           <div className="space-y-4">
-            <button onClick={scrollToTop} className="text-2xl font-bold gradient-primary bg-clip-text text-transparent hover:opacity-80 transition-smooth">
-              Alex Johnson
+            <button onClick={scrollToTop} className="text-2xl font-bold text-foreground hover:opacity-80 transition-smooth">
+              Rohan Babbellapati
             </button>
             <p className="text-muted-foreground text-sm leading-relaxed">
               Full-Stack Developer & UI/UX Designer passionate about creating exceptional digital experiences.

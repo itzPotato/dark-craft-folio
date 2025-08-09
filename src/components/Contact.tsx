@@ -87,7 +87,7 @@ const Contact = () => {
     {
       icon: <Linkedin className="h-5 w-5" />,
       label: "LinkedIn", 
-      url: "https://linkedin.com/in/rohan-babbellapati",
+      url: "https://linkedin.com/in/rohan-sashank-babbellapati",
       username: "Rohan Babbellapati"
     },
     {
@@ -103,7 +103,7 @@ const Contact = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Get In <span className="gradient-primary bg-clip-text text-transparent">Touch</span>
+            Get In Touch
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Ready to collaborate on your next project? Let's discuss how we can work together.

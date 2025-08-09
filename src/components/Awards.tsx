@@ -59,7 +59,7 @@ const Awards = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Awards & <span className="gradient-primary bg-clip-text text-transparent">Certificates</span>
+            Awards & Certificates
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Leadership Roles
@@ -69,7 +69,7 @@ const Awards = () => {
         {/* Awards Section */}
         <div className="mb-16">
           <h3 className="text-2xl font-bold mb-8 text-center">
-            <span className="gradient-primary bg-clip-text text-transparent">Academic Awards</span>
+            Academic Awards
           </h3>
           <div className="space-y-6">
             {awards.map((award, index) => (
@@ -105,7 +105,7 @@ const Awards = () => {
         {/* Leadership Section */}
         <div>
           <h3 className="text-2xl font-bold mb-8 text-center">
-            <span className="gradient-primary bg-clip-text text-transparent">Leadership Experience</span>
+            Leadership Experience
           </h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {leadership.map((role, index) => (
