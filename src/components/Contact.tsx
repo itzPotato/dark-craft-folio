@@ -87,7 +87,7 @@ const Contact = () => {
     {
       icon: <Linkedin className="h-5 w-5" />,
       label: "LinkedIn", 
-      url: "https://linkedin.com/in/rohan-sashank-babbellapati",
+      url: "https://www.linkedin.com/in/rohan-sashank-babbellapati-203660372/",
       username: "Rohan Babbellapati"
     },
     {
