@@ -1,38 +1,30 @@
 const Awards = () => {
   const achievements = [
     {
-      title: "1st place in cemc gauss mathematics contest",
-      year: "2024",
-      description: "achieved first place in the prestigious canadian mathematics competition"
+      title: "CEMC Gauss Contest - Outstanding Achievement",
+      description: "Secured 1st place in school, scoring 142/150 (top ~2.5% internationally) in the CEMC Gauss Mathematics Contest."
     },
     {
-      title: "outstanding results in cambridge checkpoints",
-      year: "2023-2024",
-      description: "demonstrated excellence in cambridge international examinations"
-    },
-    {
-      title: "harvard cs50 computer science course completion",
-      year: "2024",
-      description: "completed harvard university's introduction to computer science course"
-    },
-    {
-      title: "4.0 gpa student",
-      year: "2024-present",
-      description: "maintaining perfect academic record at american high school"
+      title: "Cambridge Lower Secondary Checkpoint - Statement of Outstanding Results",
+      year: "Jul 2023 - Jun 2024",
+      description: "Received a Statement of Outstanding Results for Cambridge Lower Secondary Checkpoint results. Scoring above 92% on all 3 tests (Math: 50/50; Science: 50/50; English: 46/50)."
     }
   ];
 
   return (
-    <section id="awards" className="py-20 px-4 sm:px-6 lg:px-8">
+    <section id="awards" className="py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-3xl mx-auto">
-        <h2 className="text-lg font-medium mb-8">achievements:</h2>
+        <h2 className="text-lg font-medium mb-8">awards:</h2>
 
         <div className="space-y-6">
           {achievements.map((achievement, index) => (
             <div key={index} className="space-y-2">
-              <div>
+              <div className="flex items-baseline gap-2">
                 <span className="text-foreground">• </span>
                 <span className="text-foreground">{achievement.title}</span>
+                {achievement.year && (
+                  <span className="text-muted-foreground text-sm">({achievement.year})</span>
+                )}
               </div>
               <p className="text-muted-foreground text-sm ml-4">
                 {achievement.description}

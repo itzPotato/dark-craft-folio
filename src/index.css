@@ -41,6 +41,9 @@ All colors MUST be HSL.
     
     /* Transitions */
     --transition-smooth: all 0.2s ease;
+    
+    /* Section spacing */
+    --section-spacing: 3rem;
   }
 
   .dark {

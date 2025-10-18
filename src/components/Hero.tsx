@@ -20,7 +20,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8">
+    <section id="home" className="min-h-[50vh] flex items-center justify-center px-4 sm:px-6 lg:px-8 py-12">
       <div className="max-w-3xl w-full">
         <div className="mb-12 text-muted-foreground space-y-1">
           <div className="flex items-center gap-2">
@@ -62,28 +62,21 @@ const Hero = () => {
               <div className="flex items-start gap-3">
                 <span className="mt-1">•</span>
                 <p>
-                  data science intern at <a href="https://www.ipmd.net" target="_blank" rel="noopener noreferrer" className="text-foreground text-link">ipmd, inc.</a>, curating datasets for advanced emotional ai systems
+                  data science intern at <a href="https://www.ipmdinc.com/" target="_blank" rel="noopener noreferrer" className="text-foreground text-link">ipmd, inc.</a>, curating datasets for advanced emotional ai systems
                 </p>
               </div>
 
               <div className="flex items-start gap-3">
                 <span className="mt-1">•</span>
                 <p>
-                  student researcher at <a href="https://aspiringscholars.com" target="_blank" rel="noopener noreferrer" className="text-foreground text-link">aspiring scholars</a>, investigating hallucination patterns in llm pipelines under dr. phil mui
+                  student researcher at <a href="https://asdrp.org" target="_blank" rel="noopener noreferrer" className="text-foreground text-link">aspiring scholars</a>, investigating hallucination patterns in llm pipelines
                 </p>
               </div>
 
               <div className="flex items-start gap-3">
                 <span className="mt-1">•</span>
                 <p>
-                  software team member at <a href="https://team9114.org" target="_blank" rel="noopener noreferrer" className="text-foreground text-link">frc rotaries 9114</a>, developing control algorithms for competitive robotics
-                </p>
-              </div>
-
-              <div className="flex items-start gap-3">
-                <span className="mt-1">•</span>
-                <p>
-                  1st place in cemc gauss mathematics contest, outstanding results in cambridge checkpoints, harvard cs50 completion
+                  1st place in cemc gauss mathematics contest, outstanding results in cambridge checkpoints, harvard cs50 completion with 100% score
                 </p>
               </div>
             </div>
@@ -93,10 +86,10 @@ const Hero = () => {
             <h3 className="text-lg font-medium">my story:</h3>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                i'm a rising sophomore at american high school in fremont, ca, with a passion for technology and innovation. my experience spans full-stack development, data science, and research, where i focus on creating impactful solutions using cutting-edge technologies.
+                i'm a rising sophomore at american high school in fremont, ca, with a passion for technology and innovation. my experience spans full-stack development, data science, and ai research, where i focus on creating impactful solutions using cutting-edge technologies.
               </p>
               <p>
-                from working on ai systems to developing web applications, i enjoy tackling complex challenges and contributing to meaningful projects that drive technological advancement. these days, i'm focused on full-stack development at vengo ai, data science at ipmd, and research in llm hallucination patterns. but i'm always on the lookout for the next challenge to tackle.
+                from working on ai systems to developing web applications, i enjoy tackling complex challenges and contributing to meaningful projects. these days, i'm focused on full-stack development at vengo ai, data science at ipmd, and research in llm hallucination patterns at aspiring scholars. but i'm always on the lookout for the next challenge to tackle.
               </p>
             </div>
           </div>

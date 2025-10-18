@@ -1,47 +1,29 @@
 const Skills = () => {
+  const skills = {
+    languages: "Python, SQL, C, HTML/CSS, Java (Currently Learning), JavaScript (Currently Learning)",
+    packages: "Ragas, LangChain, python-dotenv, Pygame, Flask, Pandas, NumPy, Matplotlib, Seaborn, scikit-learn (Currently Learning), SciPy, Bootstrap, Node.js, Supabase, React.js, Tailwind CSS, Git",
+    interests: "Machine Learning, Data Science, Data Analytics, Full-Stack Development, Large Language Models, Artificial Intelligence"
+  };
+
   return (
-    <section id="skills" className="py-20 px-4 sm:px-6 lg:px-8">
+    <section id="skills" className="py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-3xl mx-auto">
-        <h2 className="text-lg font-medium mb-8">skills:</h2>
+        <h2 className="text-lg font-medium mb-8">skills & interests:</h2>
 
-        <div className="space-y-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6">
           <div>
-            <h3 className="text-base font-medium mb-4 text-muted-foreground">languages:</h3>
-            <div className="ml-4 space-y-2">
-              <p className="text-foreground">Python</p>
-              <p className="text-foreground">JavaScript</p>
-              <p className="text-foreground">TypeScript</p>
-              <p className="text-foreground">Java</p>
-              <p className="text-foreground">SQL</p>
-              <p className="text-foreground">HTML/CSS</p>
-            </div>
+            <h3 className="text-base font-medium mb-3 text-muted-foreground">skills:</h3>
+            <p className="text-foreground text-sm leading-relaxed">{skills.languages}</p>
           </div>
 
           <div>
-            <h3 className="text-base font-medium mb-4 text-muted-foreground">frameworks & libraries:</h3>
-            <div className="ml-4 space-y-2">
-              <p className="text-foreground">React</p>
-              <p className="text-foreground">Node.js</p>
-              <p className="text-foreground">Flask</p>
-              <p className="text-foreground">PyTorch</p>
-              <p className="text-foreground">TensorFlow</p>
-              <p className="text-foreground">Pandas</p>
-              <p className="text-foreground">NumPy</p>
-            </div>
+            <h3 className="text-base font-medium mb-3 text-muted-foreground">packages:</h3>
+            <p className="text-foreground text-sm leading-relaxed">{skills.packages}</p>
           </div>
 
-          <div>
-            <h3 className="text-base font-medium mb-4 text-muted-foreground">tools & technologies:</h3>
-            <div className="ml-4 space-y-2">
-              <p className="text-foreground">Git</p>
-              <p className="text-foreground">Docker</p>
-              <p className="text-foreground">PostgreSQL</p>
-              <p className="text-foreground">MongoDB</p>
-              <p className="text-foreground">AWS</p>
-              <p className="text-foreground">Machine Learning</p>
-              <p className="text-foreground">Data Science</p>
-              <p className="text-foreground">WPILib</p>
-            </div>
+          <div className="md:col-span-2">
+            <h3 className="text-base font-medium mb-3 text-muted-foreground">interests:</h3>
+            <p className="text-foreground text-sm leading-relaxed">{skills.interests}</p>
           </div>
         </div>
       </div>
