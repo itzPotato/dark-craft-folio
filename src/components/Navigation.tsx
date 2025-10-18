@@ -1,26 +1,15 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import { Button } from "@/components/ui/button";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
 
   const navItems = [
-    { href: "#home", label: "Home" },
-    { href: "#about", label: "About" },
-    { href: "#experience", label: "Experience" },
-    { href: "#skills", label: "Skills" },
-    { href: "#awards", label: "Awards" },
-    { href: "#contact", label: "Contact" },
+    { href: "#home", label: "about" },
+    { href: "#experience", label: "work" },
+    { href: "#skills", label: "skills" },
+    { href: "#awards", label: "achievements" },
+    { href: "#contact", label: "contact" },
   ];
 
   const scrollToSection = (href: string) => {
@@ -32,57 +21,48 @@ const Navigation = () => {
   };
 
   return (
-    <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-smooth ${
-        scrolled ? "glass shadow-card" : "bg-transparent"
-      }`}
-    >
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-sm border-b border-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
-          <div className="flex-shrink-0">
-            <span className="text-xl font-bold text-foreground">
-              My Portfolio
-            </span>
-          </div>
+        <div className="flex items-center justify-between h-14">
+          <button
+            onClick={() => scrollToSection("#home")}
+            className="text-lg font-normal text-foreground hover:text-muted-foreground transition-smooth"
+          >
+            rohan
+          </button>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-8">
-              {navItems.map((item) => (
-                <button
-                  key={item.href}
-                  onClick={() => scrollToSection(item.href)}
-                  className="text-foreground/80 hover:text-primary transition-smooth hover-glow px-3 py-2 rounded-md text-sm font-medium"
-                >
-                  {item.label}
-                </button>
-              ))}
-            </div>
+          <div className="hidden md:flex items-center gap-8">
+            {navItems.map((item) => (
+              <button
+                key={item.href}
+                onClick={() => scrollToSection(item.href)}
+                className="text-sm text-muted-foreground hover:text-foreground transition-smooth uppercase tracking-wider"
+              >
+                {item.label}
+              </button>
+            ))}
           </div>
 
           {/* Mobile menu button */}
-          <div className="md:hidden">
-            <Button
-              variant="ghost"
-              size="icon"
-              onClick={() => setIsOpen(!isOpen)}
-              className="hover-glow"
-            >
-              {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-            </Button>
-          </div>
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="md:hidden text-foreground"
+          >
+            {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+          </button>
         </div>
       </div>
 
       {/* Mobile Navigation */}
       {isOpen && (
-        <div className="md:hidden glass animate-fade-in">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+        <div className="md:hidden border-t border-border bg-background">
+          <div className="px-4 py-4 space-y-3">
             {navItems.map((item) => (
               <button
                 key={item.href}
                 onClick={() => scrollToSection(item.href)}
-                className="text-foreground/80 hover:text-primary transition-smooth block px-3 py-2 rounded-md text-base font-medium w-full text-left"
+                className="block text-sm text-muted-foreground hover:text-foreground transition-smooth uppercase tracking-wider w-full text-left"
               >
                 {item.label}
               </button>

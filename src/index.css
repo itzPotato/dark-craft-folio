@@ -8,54 +8,39 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Dark portfolio theme */
-    --background: 222 84% 3%;
-    --foreground: 210 40% 98%;
+    /* Minimalist dark theme */
+    --background: 0 0% 7%;
+    --foreground: 0 0% 95%;
 
-    --card: 225 25% 8%;
-    --card-foreground: 210 40% 98%;
+    --card: 0 0% 10%;
+    --card-foreground: 0 0% 95%;
 
-    --popover: 225 25% 8%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 0 0% 10%;
+    --popover-foreground: 0 0% 95%;
 
-    --primary: 142 76% 36%;
-    --primary-foreground: 0 0% 98%;
+    --primary: 0 0% 95%;
+    --primary-foreground: 0 0% 10%;
 
-    --secondary: 225 25% 12%;
-    --secondary-foreground: 210 40% 90%;
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 90%;
 
-    --muted: 225 25% 12%;
-    --muted-foreground: 215 20% 65%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 65%;
 
-    --accent: 142 76% 36%;
-    --accent-foreground: 0 0% 98%;
+    --accent: 0 0% 90%;
+    --accent-foreground: 0 0% 10%;
 
     --destructive: 0 84% 60%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 95%;
 
-    --border: 225 25% 15%;
-    --input: 225 25% 15%;
-    --ring: 180 100% 50%;
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 0 0% 90%;
 
-    --radius: 0.75rem;
-
-    /* Custom portfolio colors - Cyrion Labs inspired */
-    --emerald-green: 150 80% 40%;
-    --mint-green: 150 80% 40%;
-    --sage-green: 150 80% 40%;
+    --radius: 0.5rem;
     
-    /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--mint-green)));
-    --gradient-hero: linear-gradient(135deg, hsl(var(--background)) 0%, hsl(225 25% 5%) 50%, hsl(var(--background)) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(var(--card)), hsl(225 25% 10%));
-    
-    /* Shadows */
-    --shadow-glow: 0 0 40px hsl(var(--primary) / 0.2);
-    --shadow-card: 0 10px 30px -10px hsl(222 84% 1% / 0.3);
-    
-    /* Animations */
-    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    --transition-spring: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    /* Transitions */
+    --transition-smooth: all 0.2s ease;
   }
 
   .dark {
@@ -126,79 +111,13 @@ All colors MUST be HSL.
 }
 
 @layer utilities {
-  /* Custom gradients */
-  .gradient-primary {
-    background: var(--gradient-primary);
-  }
-  
-  .gradient-hero {
-    background: var(--gradient-hero);
-  }
-  
-  .gradient-card {
-    background: var(--gradient-card);
-  }
-  
-  /* Custom shadows */
-  .shadow-glow {
-    box-shadow: var(--shadow-glow);
-  }
-  
-  .shadow-card {
-    box-shadow: var(--shadow-card);
-  }
-  
   /* Transitions */
   .transition-smooth {
     transition: var(--transition-smooth);
   }
   
-  .transition-spring {
-    transition: var(--transition-spring);
-  }
-  
-  /* Glass morphism */
-  .glass {
-    @apply backdrop-blur-md bg-card/50 border border-border/50;
-  }
-  
-  /* Animations */
-  .hover-lift {
-    @apply transition-smooth hover:-translate-y-1 hover:shadow-card;
-  }
-  
-  .hover-glow {
-    @apply transition-smooth hover:shadow-glow;
-  }
-  
-  /* Card hover effects */
-  .hover-card {
-    @apply transition-all duration-300 hover:shadow-[0_0_30px_hsl(var(--primary)/0.3)] hover:border-primary/50;
-  }
-  
-  /* Interactive hover effects */
-  .interactive-hover {
-    @apply transition-all duration-300 hover:shadow-[0_0_20px_hsl(var(--primary)/0.4)] hover:border-primary/60 hover:scale-[1.02];
-  }
-  
-  /* Green glow hover for cards */
-  .card-glow-hover {
-    @apply transition-all duration-300 hover:shadow-[0_0_25px_hsl(var(--primary)/0.5)] hover:border-primary hover:-translate-y-1;
-  }
-  
-  /* Scroll animations */
-  @keyframes slide-in {
-    from {
-      opacity: 0;
-      transform: translateY(30px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  .animate-slide-in {
-    animation: slide-in 0.6s ease-out forwards;
+  /* Link styles */
+  .text-link {
+    @apply underline underline-offset-4 hover:text-foreground transition-smooth;
   }
 }
